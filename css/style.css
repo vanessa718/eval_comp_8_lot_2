@@ -1,0 +1,292 @@
+/*============================*/
+/*			GLOBAL            */
+/*============================*/
+html,body {
+	font-family: 'Raleway', sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+}
+
+/*============================*/
+/*			HEADER            */
+/*============================*/
+/* top holding the image and the text */
+.top_container {
+    background-image: url("../img/img_top.jpg");
+    background-size: cover;
+    min-height: 300px;
+    color: #666666;
+	display: flex;
+	justify-content: center;
+    /*background-color: pink;*/
+	
+}
+/* Centered text */
+.centered {
+	display: flex;
+	align-items: center;
+    font-size: 84px;
+    text-shadow: -1px -1px white, 2px 2px #333;
+}
+/*============================*/
+/*			MAIN              */
+/*============================*/
+.fluid-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+	/*address */
+.card_address {
+	/*background-color: pink;*/
+	border: 1px solid grey; 
+	display: flex;
+	flex-direction: column;
+	width:15%;
+	align-self: flex-start;
+}
+.title_address {
+	text-align: center;
+}
+
+.address {
+	margin-top: 7px;
+	margin-left: 10px;
+	font-size: 13px;
+}
+legend {
+	font-size: 20px;
+}
+
+	/*form*/
+	
+.identity {
+	display: flex;
+	justify-content: space-around;
+    margin: 20px 0;
+}
+.first-n {
+	display: flex;
+	flex-direction: column;
+}
+.name {
+	display: flex;
+	flex-direction: column;
+}
+
+
+.civility_container {
+    margin: 20px 0;
+	display: flex;
+	justify-content: space-around;
+}
+.wife {
+	display: flex;
+	flex-direction: column;
+}
+.man {
+	display: flex;
+	flex-direction: column;
+}
+
+
+.date_age {
+	margin: 20px 0;
+	display: flex;
+	justify-content: space-around;
+}
+.fage {
+	display: flex;
+	flex-direction: column;
+}
+.birthday {
+	display: flex;
+	flex-direction: column;
+}
+
+
+.fprofession {
+	margin: 20px 0;
+	margin-left: 3rem;
+}
+.form-label {
+	display: flex;
+	flex-direction: column;
+}
+#profession {
+	display: flex;
+	flex-direction: column;
+}
+
+
+.field_message {
+	margin: 20px 0;
+	display: flex;
+	justify-content: flex-start;
+}
+.message {
+	display: flex;
+	flex-direction: column;
+	margin-left: 3rem;
+}
+
+#subject {
+	width: 475px;
+	height: 200px;
+	display: flex;
+	
+}
+
+
+.button {
+	text-align: right;
+	margin-right: 4.5em;
+}
+.btn {
+	padding: 12px;
+	border-radius: 4px;
+	margin-top: 6px; 
+	margin-bottom: 16px
+}
+
+
+input, select, textarea {
+	padding: 12px;
+	border-radius: 4px;
+	margin-top: 6px; 
+	margin-bottom: 16px; 
+}
+
+
+.form_container {
+	width: 600px;
+    border-radius: 5px;
+    /*background-color: #f2f2f2;*/
+ 	padding: 20px;
+ 
+}
+
+	/*card*/
+.card {
+	margin: 20px 0;
+	display: flex;
+	flex-direction: column;
+	/*background-color: yellow; */
+
+}
+.card_here {
+	width:600px;
+	height: 450px;
+	border:0;
+}
+
+
+/*============================*/
+/*			FOOTER            */
+/*============================*/
+footer {
+	background-color: black;
+	color: white; 
+	height: 100px;
+}
+
+
+/*============================*/
+/*	     MEDIA QUERIES        */
+/*============================*/
+@media (max-width: 780px) {
+	.centered {
+		display: flex;
+		align-items: center;
+		margin-top: 30px;
+	    font-size: 45px;
+	    text-shadow: -1px -1px white, 2px 2px #333;
+	}
+	.top_container {
+		display: flex;
+		background-image: none; 
+	    text-align: center;
+	    min-height: 150px;
+	    color: #666666;
+	}
+	.fluid-container {
+		display: flex;
+		flex-direction: column;
+	}
+	.card_address {
+		margin:auto;
+		margin-top: 80px;
+		border: none;
+	}
+	.address {
+		display: none;
+	}
+	.img_address {
+		display: none;
+	}
+
+
+}
+
+@media (max-width: 320px) {
+	.card_address {
+		width: 100%;
+		align-items: center;
+		margin-top: 0;
+	}
+	.title_address{
+		margin:auto;
+		border: none;
+	}
+	.address{
+		font-size: 10px;
+	}
+	.centered {
+		margin-top: 0;
+		font-size: 36px;
+	}
+	.form_container {
+		width: 280px;
+	}
+	.identity {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	    margin: 20px 0;
+	}
+	.civility_container {
+	    margin: 20px 0;
+		display: flex;
+		flex-direction: column;
+		margin-left: 3rem;
+	}
+	.wife,.man {
+		margin-left: 4.5rem;
+	}
+
+	.date_age {
+		margin: 20px 0;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	#subject {
+		width: 172px;
+		height: 200px;
+		display: flex;
+	}
+	.card_here {
+		width: 280px;
+		height: 240px;
+	}
+	legend{
+		text-align: center;
+	}
+
+}
